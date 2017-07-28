@@ -9,5 +9,5 @@ Some examples about Visual Regression Testing Tools:
 - [Visual Macther](https://github.com/concretesolutions/magneton)
 
 ## Pre requirements
-* To run this tests is necessary start a [ng-pokedex application](https://github.com/samycici/visual-regression-tools/ng-pokedex/README.md).
+* To run this tests is necessary start a [ng-pokedex application](https://github.com/samycici/visual-regression-tools/blob/master/ng-pokedex/README.md).
 * Install chrome browser
