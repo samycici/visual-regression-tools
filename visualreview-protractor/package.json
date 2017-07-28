@@ -1,0 +1,30 @@
+{
+  "name": "visual.regression.talk.visualreview.protractor",
+  "version": "0.0.1",
+  "description": "A Visual Regression Talk example with visual review and protractor",
+  "main": "pokedex_visual_test.js",
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samycici/visual-regression-tools.git"
+  },
+  "keywords": [
+    "Applitools",
+    "Protractor",
+    "Devops Day",
+    "Minas Testing Conference"
+  ],
+  "author": "Samanta Souza",
+  "license": "Apache license",
+  "bugs": {
+    "url": "https://github.com/samycici/visual-regression-tools/issues"
+  },
+  "homepage": "https://github.com/samycici/visual-regression-tools",
+  "dependencies": {
+   "jasmine": "^2.7.0",
+   "protractor": "^5.1.2",
+   "visualreview-protractor": "^0.3.0"
+ }
+}
