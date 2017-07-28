@@ -1,0 +1,32 @@
+{
+  "name": "ng-pokedex",
+  "version": "1.0.0",
+  "description": "A pokedex web app using AngularJS and Pokeapi.co",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files=\"**/*.html, src/**/*.js,src/**/*.css\"",
+    "postinstall": "bower install"
+   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarowolfx/ng-pokedex.git"
+  },
+  "keywords": [
+    "pokemon",
+    "pokedex",
+    "angularjs",
+    "angular",
+    "javascript",
+    "spa"
+  ],
+  "author": "Alvaro Viebrantz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvarowolfx/ng-pokedex/issues"
+  },
+  "homepage": "https://github.com/alvarowolfx/ng-pokedex#readme",
+  "dependencies": {
+    "browser-sync": "^2.14.0"
+  }
+}

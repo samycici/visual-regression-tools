@@ -1,0 +1,13 @@
+<div ng-show='pokemon.evolutions.length == 0' class='panel panel-default'>
+    <h1 class='text-center'> No evolutions :( </h1>
+</div>
+<div ng-repeat="evo in pokemon.evolutions" class='panel panel-default'>
+    <div class='panel-body'>
+        <img ng-src='https://img.pokemondb.net/sprites/x-y/normal/basculin-red.png' class='pull-left' height="100px" ></img>
+        <h4>#{{evo.id}}</h4>
+        <h4>{{evo.to }}</h4>
+        <a ui-sref='pokemon({ id: evo.id })' class='btn btn-primary'>
+            See details
+        </a>
+    </div>
+</div>

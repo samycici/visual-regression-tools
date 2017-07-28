@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokedex</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="src/app.css">
+</head>
+<body ng-app="pokedex">
+
+    <div class='container'>
+        <h1 class='text-center'>Pokedex App</h1>
+        <navegacao></navegacao>
+        <ui-view></ui-view>
+    </div>
+</body>
+
+<!-- vendor scripts -->
+<script type="text/javascript" src='bower_components/angular/angular.js'></script>
+<script type="text/javascript" src='bower_components/angular-bootstrap/ui-bootstrap-tpls.js'></script>
+<script type="text/javascript" src='bower_components/ui-router/release/angular-ui-router.js'></script>
+
+<!-- app scripts -->
+<script type="text/javascript" src='src/directives.js'></script>
+<script type="text/javascript" src='src/services.js'></script>
+<script type="text/javascript" src='src/controllers.js'></script>
+<script type="text/javascript" src='src/app.js'></script>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 footerleft ">
+        <div class="logofooter"> Pokedex</div>
+        <p>Pokedex App to test Visual Regression Tools</p>
+        <p><i class="fa fa-envelope"></i> E-mail : samycici@gmail.com</p>
+
+      </div>
+      <div class="col-md-2 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">GENERAL </h6>
+        <ul class="footer-ul">
+          <li><a href="http://pokeapi.co/"> PokeAPI </a></li>
+          <li><a href="https://angularjs.org/"> AngularJS</a></li>
+          <li><a href="https://pokemondb.net/"> Pokemondb</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-6">
+      <p>© 2017 - All Rights Reserved</p>
+    </div>
+
+  </div>
+</div>
+</html>

@@ -1,0 +1,40 @@
+<div ng-show='pokemon.moves.length == 0' class='panel panel-default'>
+    <h1 class='text-center'> No moviments :( </h1>
+</div>
+<ul class='nav nav-pills'>
+    <li ng-repeat="move in pokemon.moves" ng-class="{ active : isActive(move.resource_uri.split('/')[4]) } ">
+        <a ng-click="verMovimento(move.resource_uri.split('/')[4])" class='nav-pill'>
+            {{move.name}}
+            <span class="badge" ng-show='move.level'>
+                {{move.level}}
+            </span>
+            <span class="badge" ng-show="move.learn_type == 'machine'">
+                HM
+            </span>
+            <span class="badge" ng-show="move.learn_type == 'egg move'">
+                EGG
+            </span>
+            <span class="badge" ng-show="move.learn_type == 'tutor'">
+                TUT
+            </span>
+        </a>
+    </li>
+</ul>
+<div class='panel panel-default' ng-show='movimento'>
+    <div class='panel-heading'>
+        {{movimento.name}}
+    </div>
+    <div class='panel-body'>
+        {{movimento.description}}
+        <ul>
+            <li>
+                <b>Power:</b> {{movimento.power}}
+            </li>
+            <li>
+                <b>Accuracy:</b> {{movimento.accuracy}}
+            </li>
+            <li>
+                <b>Power Points:</b> {{movimento.pp}}
+            </li>
+    </div>
+</div>

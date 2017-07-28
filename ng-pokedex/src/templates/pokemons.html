@@ -1,0 +1,25 @@
+<h3> Pokemon's List </h3>
+<div class="form-group has-feedback">
+    <input class="form-control" placeholder="Search Pokemons" id='busca'ng-model='busca'>
+    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+</div>
+
+<progressbar ng-show='carregando' value="'70'">
+    Searching pokemons
+</progressbar>
+
+<div ng-hide='carregando'>
+    <div class='panel panel-default col-md-3 col-xs-6' ng-repeat="pokemon in pokemons | filter: busca" style="height: 200px;">
+        <div class='panel-body'>
+            <div class='img-container'>
+                <img ng-src='{{pokemon.img}}' class='pull-left' style="width:100%; height:auto"></img>
+            </div>
+            <div class='infos-container'>
+                <h5>#{{pokemon.id}}</h5>
+                <h4>{{pokemon.name }}</h4>
+                <a ui-sref='pokemon({ id: pokemon.id })' class='btn btn-primary' style="width: 120px">
+                See details
+            </a></div>
+        </div>
+    </div>
+</div>

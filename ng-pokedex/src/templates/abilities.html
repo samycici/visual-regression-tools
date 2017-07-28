@@ -1,0 +1,12 @@
+<div ng-show='pokemon.abilities.length == 0' class='panel panel-default'>
+    <h1 class='text-center'> No abilities :( </h1>
+</div>
+
+<ul class='nav nav-pills'>
+    <li ng-repeat="abilitie in pokemon.abilities" ng-class="{ active : isActive(abilitie.resource_uri.split('/')[4]) } ">
+      <div class='abilitie-container'>
+        <span ng-click="seeAbilitie(abilitie.resource_uri.split('/')[4])" class='nav-pill'>
+            {{abilitie.name}}
+        <span></div>
+    </li>
+</ul>
