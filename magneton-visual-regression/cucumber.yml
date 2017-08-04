@@ -1,0 +1,13 @@
+##YAML Template
+---
+default: -p html_report -p chrome -p dev
+html_report: --format progress --format html --out=features_report.html
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+poltergeist: BROWSER=poltergeist
+internet_explorer: BROWSER=internet_explorer
+safari: BROWSER=safari
+headless_xvfb: BROWSER=headless_xvfb
+remote_browser: BROWSER=remote_browser
+dev: ENVIRONMENT_TYPE=dev
+hmg: ENVIRONMENT_TYPE=hmg
