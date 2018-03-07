@@ -7,6 +7,7 @@ Some examples about Visual Regression Testing Tools:
 - [Lineup](https://github.com/otto-de/lineup)
 - [Visual Review](https://github.com/xebia/VisualReview)
 - [Visual Macther](https://github.com/concretesolutions/magneton)
+- [BackstopJS](https://github.com/garris/BackstopJS)
 
 ## Pre requirements
 * To run this tests is necessary start a [ng-pokedex application](https://github.com/samycici/visual-regression-tools/blob/master/ng-pokedex/README.md).
