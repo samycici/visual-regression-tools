@@ -2,7 +2,7 @@
     angular.module('pokedex.services',[])
         .factory('Pokemons',Pokemons)
         .factory('Historico', Historico)
-        .constant('PokeapiURL','http://pokeapi.co/api/v1/');
+        .constant('PokeapiURL','https://pokeapi.co/api/v1/');
 
 
     Pokemons.$inject = ['$http', '$q', 'PokeapiURL'];
