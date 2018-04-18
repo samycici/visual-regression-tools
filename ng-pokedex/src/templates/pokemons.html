@@ -14,7 +14,7 @@
             <div class='img-container'>
                 <img ng-src='{{pokemon.img}}' class='pull-left' style="width:100%; height:auto"></img>
             </div>
-            <div class='infos-container'>
+            <div class='infos-container' id={{pokemon.name}}>
                 <h5>#{{pokemon.id}}</h5>
                 <h4>{{pokemon.name }}</h4>
                 <a ui-sref='pokemon({ id: pokemon.id })' class='btn btn-primary' style="width: 120px">
